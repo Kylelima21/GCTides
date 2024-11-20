@@ -20,7 +20,7 @@
 # clear workspace
 # rm(list=ls()) # Careful clearing out other folks' environments!
 # clear console
-cat("\014")
+# cat("\014")
 
 # > 1.2: Load packages -----
 library(here) # working directory management
@@ -32,7 +32,7 @@ here::i_am("GCTides.R")
 
 # > 1.4: Read in table -----
 # read_table will read in the txt file and guess the column types
-df_tides = read_table("8413079_annual.txt",
+df_tides = read_table("data/8413079_annual_2025.txt",
                       skip = 19) # there are 19 lines of extra info
 
 glimpse(df_tides)
@@ -89,7 +89,7 @@ df_tides_exp =
 
 # > 2.5: Export -----
 write.csv(df_tides_exp,
-          paste("GCTides",
+          paste("outputs/GCTides",
                 gsub(",",
                      "",
                      gsub(" ",
