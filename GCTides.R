@@ -9,6 +9,7 @@
 # i: Requirements --------------------------------------------------------------
 # [ ] 1. Download the annual predictions for your station of interest from
 #     NOAA Tides and Currents. Use local time, MLLW, 24-hr clock, and TXT.
+#     Download: https://tidesandcurrents.noaa.gov/noaatideannual.html?id=8413079
 # [ ] 2. Store this file in the same location as this script.
 # [ ] 3. Before importing the csv created by this script into your Google 
 #     Calendar, make sure your time zone is that of your station.
