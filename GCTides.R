@@ -9,7 +9,7 @@
 # i: Requirements --------------------------------------------------------------
 # [ ] 1. Download the annual predictions for your station of interest from
 #     NOAA Tides and Currents. Use local time, MLLW, 24-hr clock, and TXT.
-#     Download: https://tidesandcurrents.noaa.gov/noaatideannual.html?id=8413079
+#     Download: c
 # [ ] 2. Store this file in the same location as this script.
 # [ ] 3. Before importing the csv created by this script into your Google 
 #     Calendar, make sure your time zone is that of your station.
@@ -33,7 +33,7 @@ here::i_am("GCTides.R")
 
 # > 1.4: Read in table -----
 # read_table will read in the txt file and guess the column types
-df_tides = read_table("data/8413079_annual_2025.txt",
+df_tides = read_table("data/8413079_annual_2026.txt",
                       skip = 19) # there are 19 lines of extra info
 
 glimpse(df_tides)
